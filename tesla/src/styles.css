@@ -7,27 +7,56 @@ body {
   margin: auto;
 }
 
-.navbar {
+.swiper-container .swiper-wrapper .swiper-slide .navbar {
   padding: 10px;
   align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.navbar .navbar-brand .title {
+.swiper-container .swiper-wrapper .swiper-slide .navbar .navbar-brand .title {
   font-size: 2em;
   font-family: tesla;
 }
-.navbar .navbar-nav {
+.swiper-container .swiper-wrapper .swiper-slide .navbar #btnBars {
+  display: none;
+}
+.swiper-container .swiper-wrapper .swiper-slide .navbar .navbar-nav {
   -moz-column-gap: 60px;
        column-gap: 60px;
   list-style-type: none;
   display: flex;
   flex-direction: row;
 }
-.navbar .navbar-nav .nav-item .nav-link {
+.swiper-container .swiper-wrapper .swiper-slide .navbar .navbar-nav .nav-item .nav-link {
+  font-size: 1.4em;
   font-family: tesla;
   text-decoration: none;
+}
+.swiper-container .swiper-wrapper .swiper-slide .navbar .navbar-nav #btnAccount {
+  font-family: tesla;
+  background: transparent;
+  border: 1px solid black;
+}
+.swiper-container .swiper-wrapper .swiper-slide .navbar .navbar-nav #btnAccount:hover {
+  color: black;
+  background: azure;
+}
+
+.aboutCars {
+  margin: 15px auto;
+  text-align: center;
+}
+.aboutCars .footer {
+  padding: 5px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.aboutCars .footer .img-fluid {
+  height: 90px;
+  max-width: 150px;
 }
 
 @font-face {

@@ -8,35 +8,72 @@ body {
 }
 
 // MIXIN & ROOT
+$firstColor: black;
+$secondColor: azure;
+
+
 @mixin flex ($flexDirection) {
     display: flex;
     flex-direction: $flexDirection;
 }
 
-.navbar {
-    padding: 10px;
-    align-items: center;
-    @include flex (row);
-    justify-content: space-between;
-    .navbar-brand {
-        .title {
-            font-size: 2.0em;
-            font-family: tesla;
-        }
-    }
-    .navbar-nav {
-        column-gap: 60px;
-        list-style-type: none;
-        @include flex (row);
-        .nav-item {
-            .nav-link {
-                font-family: tesla;
-                text-decoration: none;
-            }
+.swiper-container {
+    .swiper-wrapper {
+        .swiper-slide {
+            .navbar {
+                padding: 10px;
+                align-items: center;
+                @include flex (row);
+                justify-content: space-between;
+                .navbar-brand {
+                    .title {
+                        font-size: 2.0em;
+                        font-family: tesla;
+                    }
+                }
+                #btnBars {
+                    display: none;
+                }
+                .navbar-nav {
+                    column-gap: 60px;
+                    list-style-type: none;
+                    @include flex (row);
+                    .nav-item {
+                        .nav-link {
+                            font-size: 1.4em;
+                            font-family: tesla;
+                            text-decoration: none;
+                        }
+                    }
+                    #btnAccount {
+                        font-family: tesla;
+                        background: transparent;
+                        border: 1px solid $firstColor;
+                        &:hover {
+                            color: $firstColor;
+                            background: $secondColor;
+                        }
+                    }
+                }
+            }           
         }
     }
 }
 
+.aboutCars {
+    margin: 15px auto;
+    text-align: center;
+    .footer {
+        padding: 5px;
+        align-items: center;
+        @include flex (row);
+        justify-content: space-between;
+        .img-fluid {
+            height: 90px;
+            max-width: 150px;
+        }
+    }
+}
 
 @font-face {
     font-family: tesla;

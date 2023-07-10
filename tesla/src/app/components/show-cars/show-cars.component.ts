@@ -1,12 +1,29 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
+import Swiper from 'swiper';
 
 @Component({
   selector: 'app-show-cars',
   templateUrl: './show-cars.component.html',
 })
-export class ShowCarsComponent {
-  firstCar: string = '/assets/picts/teslaFirst.jpg';
-  secondCar: string = "/assets/picts/teslaSecond.jpg";
-  thirdCar: string = "/assets/picts/teslaThird.jpg";
-  fourCar: string = "/assets/picts/teslaFour.jpg"
+export class ShowCarsComponent implements AfterViewInit {
+  @ViewChild('swiperContainer') swiperContainer!: ElementRef;
+
+  ngAfterViewInit(): void {
+    new Swiper(this.swiperContainer.nativeElement, {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  }
 }
