@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: block;
+  margin: auto;
+}
+
+.navbar {
+  padding: 10px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.navbar .navbar-brand .title {
+  font-size: 2em;
+  font-family: tesla;
+}
+.navbar .navbar-nav {
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+.navbar .navbar-nav .nav-item .nav-link {
+  font-family: tesla;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: tesla;
+  src: url("./app/fonts/TESLA.ttf");
+}/*# sourceMappingURL=styles.css.map */
