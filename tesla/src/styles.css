@@ -7,38 +7,38 @@ body {
   margin: auto;
 }
 
-.swiper-container .swiper-wrapper .swiper-slide .navbar {
+.navbar {
   padding: 10px;
   align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.swiper-container .swiper-wrapper .swiper-slide .navbar .navbar-brand .title {
+.navbar .navbar-brand .title {
   font-size: 2em;
   font-family: tesla;
 }
-.swiper-container .swiper-wrapper .swiper-slide .navbar #btnBars {
+.navbar #btnBars {
   display: none;
 }
-.swiper-container .swiper-wrapper .swiper-slide .navbar .navbar-nav {
+.navbar .navbar-nav {
   -moz-column-gap: 60px;
        column-gap: 60px;
   list-style-type: none;
   display: flex;
   flex-direction: row;
 }
-.swiper-container .swiper-wrapper .swiper-slide .navbar .navbar-nav .nav-item .nav-link {
+.navbar .navbar-nav .nav-item .nav-link {
   font-size: 1.4em;
   font-family: tesla;
   text-decoration: none;
 }
-.swiper-container .swiper-wrapper .swiper-slide .navbar .navbar-nav #btnAccount {
+.navbar .navbar-nav #btnAccount {
   font-family: tesla;
   background: transparent;
   border: 1px solid black;
 }
-.swiper-container .swiper-wrapper .swiper-slide .navbar .navbar-nav #btnAccount:hover {
+.navbar .navbar-nav #btnAccount:hover {
   color: black;
   background: azure;
 }

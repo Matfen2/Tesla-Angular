@@ -17,9 +17,7 @@ $secondColor: azure;
     flex-direction: $flexDirection;
 }
 
-.swiper-container {
-    .swiper-wrapper {
-        .swiper-slide {
+
             .navbar {
                 padding: 10px;
                 align-items: center;
@@ -56,9 +54,7 @@ $secondColor: azure;
                     }
                 }
             }           
-        }
-    }
-}
+
 
 .aboutCars {
     margin: 15px auto;
